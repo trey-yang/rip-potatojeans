@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<title>404 Page Not Found</title>
+	<meta name="robots" content="none">
+	<meta name="viewport" content="width=device-width, initial-scale=0.7">
+	<link rel="shortcut icon" type="image/ico" href="/style/TY_favicon.ico" />
+	<script type="text/javascript" src="/style/warpspeed.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/style/main.css" />
+</head>
+<title>404 Page Not Found</title>
+
+<body>
+	<div id="nav">
+		<div class="content">
+			<div id="logo">Trey Yang</div>
+			<a href="/">Home</a>
+			<a href="/projects">Projects</a>
+			<a href="/aboutme">About Me</a>
+		</div>
+	</div>
+	<div id="warp">
+		<canvas id="canvas" class="warp"></canvas>
+		<script>
+			var x = new WarpSpeed("canvas", {
+				"speed": 1,
+				"speedAdjFactor": 0.5,
+				"density": 1,
+				"shape": "square",
+				"warpEffect": true,
+				"warpEffectLength": 15,
+				"depthFade": true,
+				"starSize": 5,
+				"backgroundColor": "#0A0A0A",
+				"starColor": "#ff2e4a"
+			});
+		</script>
+	</div>
+	<div align="center" id="content-a">
+		<div style="max-width:30em; min-height:850px; padding-left:1em; padding-right:1em;">
+			<br>
+			<img src="/style/sad_face.png" width=210 height=210>
+			<h2>Error 404 - Page Not Found</h2>
+			<div align="left" style="padding-left:2em; padding-right:2em">
+				<p>You found the 404 page, but it's not the <strike>droid</strike> page you're looking for. Oops!<br></p>
+				<div align="center" style="font-size:150%;"><a class="SMButton" href="/">Homepage</a></div>
+				<br>
+				<p>If you could spare a moment, please let me know how you got here so that I can try to fix this: <u><a href="mailto:me@treyyang.com"> me@treyyang.com</a></u>. Thanks so much!</p>
+			</div>
+		</div>
+		<!-- FOOTER -->
+		<div id="footer-bg">
+			<div id="footer-txt"> Copyright &#169; 2017 Trey Yang. All rights reserved.</div>
+		</div>
+	</div>
+</body>
+
+</html>

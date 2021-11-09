@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta property="og:title" content="About Me | Trey Yang">
+	<meta name="keywords" content="Trey Yang, personal, Boston, Boston University, BU, astronomy, astrophysics, CS" />
+	<meta name="viewport" content="width=device-width, initial-scale=0.7">
+	<meta charset="utf-8" />
+	<link rel="shortcut icon" type="image/ico" href="/style/TY_favicon.ico" />
+	<script type="text/javascript" src="/style/warpspeed.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/style/main.css" />
+</head>
+<title>About Me | Trey Yang</title>
+
+<body>
+	<a name="top"></a>
+	<div id="nav">
+		<div class="content">
+			<div id="logo">Trey Yang</div>
+			<a href="/">Home</a>
+			<a href="/projects">Projects</a>
+			<a href="/aboutme">About Me</a>
+		</div>
+	</div>
+	<div id="warp">
+		<canvas id="canvas" class="warp"></canvas>
+		<script>
+			var x = new WarpSpeed("canvas", {
+				"speed": 2,
+				"speedAdjFactor": 0.5,
+				"density": 1,
+				"shape": "square",
+				"warpEffect": true,
+				"warpEffectLength": 5,
+				"depthFade": true,
+				"starSize": 5,
+				"backgroundColor": "#202020",
+				"starColor": "#EEEEEE"
+			});
+		</script>
+	</div>
+	<div align="center" id="content-a">
+		<p> </p>
+		<div align="left" style="max-width:50em; padding-left:3em; padding-right:3em; min-height:812px; font-size:90%;">
+			<div align="center">
+				<img src="me_photo.jpg" style="border-style:solid; border-width:3px; border-color:#EEEEEE;" width=324 height=241>
+			</div>
+			<br>
+			<p>Hello! My name is Trey. People also know me as 杨清云 or Qingyun Yang.</p>
+			<p><a class="SMButton" href="/resume-en-latest" target="_blank">résumé</a> <u><a class="SMButton" href="/contact">Contact Me</a></u></p>
+			<br>
+			<h2>ABOUT ME</h2>
+			<p>I am an undergraduate student at Boston University studying <b>Astronomy and Physics</b>, with a minor in Computer Science. I am a member of the BU Astronomical Society executive board.</p>
+			<p>My <b>hometown</b> is a small city in the south-western mountains of China, called <a href="https://en.wikipedia.org/wiki/Guiyang" target="_blank">Guiyang</a>. My city, and this part of China in general, is famous for spicy food which I miss a
+				whole lot.</p>
+			<p>I play the <b>saxophone</b> pretty well. Right now I'm also trying to learn guitar.</p>
+			<p>I am a licensed <b>ham radio</b> operator (call sign KC1GFQ). Currently my "rig" is just 2 cheap handhelds which I used to volunteer in the Boston Marathons.</p>
+			<br>
+		</div>
+		<!-- FOOTER -->
+		<div id="footer-bg">
+			<div id="footer-txt"> Copyright &#169; 2017 Trey Yang. All rights reserved.</div>
+		</div>
+	</div>
+</body>
+
+</html>

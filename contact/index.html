@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta property="og:title" content="Contact Me | Trey Yang">
+	<meta name="keywords" content="Trey Yang, personal, Boston, Boston University, BU, astronomy, astrophysics, CS" />
+	<meta name="viewport" content="width=device-width, initial-scale=0.7">
+	<link rel="shortcut icon" type="image/ico" href="/style/TY_favicon.ico" />
+	<script type="text/javascript" src="/style/warpspeed.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/style/main.css" />
+</head>
+<title>Contact Me | Trey Yang</title>
+
+<body>
+	<div id="nav">
+		<div class="content">
+			<div id="logo">Trey Yang</div>
+			<a href="/">Home</a>
+			<a href="/projects">Projects</a>
+			<a href="/aboutme">About Me</a>
+		</div>
+	</div>
+	<div id="warp">
+		<canvas id="canvas" class="warp"></canvas>
+		<script>
+			var x = new WarpSpeed("canvas", {
+				"speed": 2,
+				"speedAdjFactor": 0.5,
+				"density": 1,
+				"shape": "square",
+				"warpEffect": true,
+				"warpEffectLength": 5,
+				"depthFade": true,
+				"starSize": 5,
+				"backgroundColor": "#202020",
+				"starColor": "#EEEEEE"
+			});
+		</script>
+	</div>
+	<div align="center" id="content-a">
+		<div align="left" style="max-width:50em; min-height:600px; padding-left:4em; padding-right:1em;">
+			<p><br></p>
+			<h1>Contact Me</h1>
+			<div style="padding-right:2em; padding-top:0.5em;">
+				<p>You can find me through these options below:</p>
+				<br>
+				<a class="icon" href="mailto:me@treyyang.com"><img src="email.png" height="75" width="75"></a>
+				<a class="icon" href="https://facebook.com/trey.yang.42" target="_blank"><img src="facebook.png" height="75" width="75"></a>
+				<a class="icon" href="https://github.com/trey-yang" target="_blank"><img src="github.png" height="75" width="75"></a>
+				<a class="icon" href="https://t.me/chromosphere" target="_blank"><img src="telegram.png" height="75" width="75"></a>
+				<a class="icon" href="/404"><img src="soundcloud.png" height="75" width="75"></a>
+			</div>
+			<div style="font-size:65%;">
+				<p>PGP Fingerprint: 0ACF 9EBE DC1E D50F 0294 5915 EAAC 6B76 F88B 7BF5</p>
+			</div>
+		</div>
+		<!-- FOOTER -->
+		<div id="footer-bg" style="position:fixed;">
+			<div id="footer-txt"> Copyright &#169; 2017 Trey Yang. All rights reserved.</div>
+		</div>
+	</div>
+</body>
+
+</html>
