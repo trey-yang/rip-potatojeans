@@ -7,20 +7,15 @@
   </head>
   <body>
     <div class="render-box">
-      <object
-        data='/public_files/Trey-Yang-Resume-EN-2020a.pdf'
-        type="application/pdf"
-        width="100%"
-        height="100%"
-      >
-
         <iframe
-          src='/public_files/Trey-Yang-Resume-EN-2020a.pdf'
+		  id="pdf-js-viewer" 
+		  title="PDF Renderer" 
+		  frameborder="0"
+          src='/lib/pdfjs/web/viewer.html?file=/public_files/Trey-Yang-Resume-EN-2020a.pdf'
           width="100%"
+		  height="100%"
         >
-        <p>This browser does not support PDF!</p>
         </iframe>
-      </object>
     </div>
 
   </body>
