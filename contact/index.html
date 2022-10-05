@@ -2,63 +2,44 @@
 <html lang="en-US">
 
 <head>
-	<meta property="og:title" content="Contact Me | Trey Yang">
-	<meta name="keywords" content="Trey Yang, personal, Boston, Boston University, BU, astronomy, astrophysics, CS" />
-	<meta name="viewport" content="width=device-width, initial-scale=0.7">
-	<link rel="shortcut icon" type="image/ico" href="/style/TY_favicon.ico" />
-	<script type="text/javascript" src="/style/warpspeed.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="/style/main.css" />
+    <meta property="og:title" content="Contact Me | Trey Yang">
+    <meta name="keywords"
+        content="Trey Yang, personal, Boston, Boston University, BU, astronomy, astrophysics, ANU, Australian National University, Canberra" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.7">
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" type="image/ico" href="/style/TY_favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="/style/main.css" />
+    <script src="/style/warpspeed.min.js" type="text/javascript"></script>
+    <script src="/components/common.js" type="text/javascript" defer></script>
 </head>
 <title>Contact Me | Trey Yang</title>
 
 <body>
-	<div id="nav">
-		<div class="content">
-			<div id="logo">Trey Yang</div>
-			<a href="/">Home</a>
-			<a href="/projects">Projects</a>
-			<a href="/aboutme">About Me</a>
-		</div>
-	</div>
-	<div id="warp">
-		<canvas id="canvas" class="warp"></canvas>
-		<script>
-			var x = new WarpSpeed("canvas", {
-				"speed": 2,
-				"speedAdjFactor": 0.5,
-				"density": 1,
-				"shape": "square",
-				"warpEffect": true,
-				"warpEffectLength": 5,
-				"depthFade": true,
-				"starSize": 5,
-				"backgroundColor": "#202020",
-				"starColor": "#EEEEEE"
-			});
-		</script>
-	</div>
-	<div align="center" id="content-a">
-		<div align="left" style="max-width:50em; min-height:600px; padding-left:4em; padding-right:1em;">
-			<p><br></p>
-			<h1>Contact Me</h1>
-			<div style="padding-right:2em; padding-top:0.5em;">
-				<p>You can find me through these options below:</p>
-				<br>
-				<a class="icon" href="mailto:me@treyyang.com"><img src="email.png" height="75" width="75"></a>
-				<a class="icon" href="https://facebook.com/trey.yang.42" target="_blank"><img src="facebook.png" height="75" width="75"></a>
-				<a class="icon" href="https://github.com/trey-yang" target="_blank"><img src="github.png" height="75" width="75"></a>
-				<a class="icon" href="https://t.me/chromosphere" target="_blank"><img src="telegram.png" height="75" width="75"></a>
-				<a class="icon" href="/404"><img src="soundcloud.png" height="75" width="75"></a>
-			</div>
-			<div style="font-size:65%;">
-				<p>PGP Fingerprint: C5BB 6A19 932B E593 9781  DD04 E5D6 49D9 00D4 D862</p>
-			</div>
-		</div>
-		<!-- FOOTER -->
-		<div id="footer-bg" style="position:fixed;">
-			<div id="footer-txt"> &#169; 2021 Trey Yang. All rights reserved.</div>
-		</div>
-	</div>
+    <component-navbar></component-navbar>
+    <canvas id="canvas" class="warp"></canvas>
+    <component-warpfield></component-warpfield>
+
+    <div id="fillbox">
+        <br>
+        <div id="content-a">
+            <p>You can find me through these options below:</p>
+            <br>
+            <a class="icon" href="mailto:me@treyyang.com"><img src="email.png" height="75" width="75"></a>
+            <a class="icon" href="https://facebook.com/trey.yang.42" target="_blank"><img src="facebook.png" height="75"
+                    width="75"></a>
+            <a class="icon" href="https://github.com/trey-yang" target="_blank"><img src="github.png" height="75"
+                    width="75"></a>
+            <a class="icon" href="https://t.me/chromosphere" target="_blank"><img src="telegram.png" height="75"
+                    width="75"></a>
+            <a class="icon" href="/404"><img src="soundcloud.png" height="75" width="75"></a>
+            <br>
+            <br>
+            <div style="font-size:75%;">
+                <p>PGP Fingerprint: C5BB 6A19 932B E593 9781 DD04 E5D6 49D9 00D4 D862</p>
+            </div>
+        </div>
+        <component-footer></component-footer>
+    </div>
 </body>
 
 </html>

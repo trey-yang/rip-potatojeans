@@ -6,72 +6,66 @@ html, body {
   padding: 0;
   border: 0;
   background-color: #EEEEEE;
-}
-
-body {
   font-family: verdana;
 }
-
-a:link {
-  color: #9BEA00;
-}
-
-a:visited {
-  color: #8BD200;
-}
-
-/*a:visited {color:#C6683B;}
- a:hover {color:#FF0000;} */
-a:active {
-  color: #99FFDD;
-}
-
+a:link {color: #27b92e;}
+a:visited {color: #00d269;}
+a:hover {color:#15ff00;} */
+a:active {color: #99FFDD;}
 ::selection {
   background: #009999;
   color: #EEEEEE;
 }
-
 ::-moz-selection {
   background: #009999;
   color: #EEEEEE;
 }
 
 /*
-	Nav menu
+	Navbar
 */
 #nav {
-  background-color: #deffd5;
-  /* background:linear-gradient(270deg, #34e89e 0%, #deffd5 100%); */
+  /* background-color: #deffd5; */
+  background:linear-gradient(270deg, #27b94b 0%, #deffd5 100%);
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 60px;
-  /*4.2em;*/
+  height: 4em;
   z-index: 3;
   text-align: right;
 }
-
+div.nav-content {
+  width: 95%;
+  max-width: 70em;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+  position: relative;
+}
 #logo {
   font-size: 180%;
-  line-height: 2em;
+  line-height: 2.3em;
   font-family: Tahoma, Geneva, sans-serif;
   color: #000000;
   opacity: 0.77;
-  display: inline-block;
   width: auto;
   float: left;
   font-weight: 900;
   text-transform: uppercase;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
+  cursor: pointer;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
-
+#logo:hover {background-color: rgba(0, 5, 20, 0.3);}
+#logo:active {background-color: rgba(0, 5, 20, 0.4);}
 #nav a {
   margin: 0;
   padding: 0;
   height: 100%;
-  line-height: 3.8em;
+  line-height: 4em;
   display: inline-block;
   text-align: center;
   color: #000000 !important;
@@ -86,36 +80,12 @@ a:active {
   text-transform: uppercase;
   letter-spacing: -0.03em;
 }
-
-#nav a:hover {
-  background-color: rgba(0, 5, 20, 0.3);
-}
-
-#nav a:active {
-  background-color: rgba(0, 5, 20, 0.4);
-}
-
-div.content {
-  width: 95%;
-  max-width: 70em;
-  margin-left: auto;
-  margin-right: auto;
-  clear: both;
-  position: relative;
-}
+#nav a:hover {background-color: rgba(0, 5, 20, 0.3);}
+#nav a:active {background-color: rgba(0, 5, 20, 0.4);}
 
 /*
-	Page Layouts
+	Warp
 */
-#warp {
-  position: fixed;
-  z-index: 0;
-  top: 15%;
-  left: 0;
-  width: 100%;
-  height: 85%;
-}
-
 canvas.warp {
   position: fixed;
   top: 0;
@@ -124,74 +94,48 @@ canvas.warp {
   height: 100%;
 }
 
-#content-a {
+/*
+	Content Block
+*/
+#homepage-fillbox {
+  margin: 0 auto; /* centers horizontally */
+  font-size: 130%;
   position: relative;
   color: #FFFFFF;
-  font-size: 130%;
-  line-height: 150%;
   z-index: 1;
-  top: 65px;
+  top: 4em;
+  width: 100%;
+  overflow-y: auto;
+  max-width:30em;
+  min-height:500px;
+}
+#fillbox {
+  margin: 0 auto; /* centers horizontally */
+  font-size: 115%;
+  position: relative;
+  color: #FFFFFF;
+  z-index: 1;
+  top: 4em;
   bottom: 0;
   left: 0%;
   width: 100%;
   overflow-y: auto;
+  max-width:60em;
+  min-height:500px;
 }
-
-#footer-bg {
-  position: relative;
-  z-index: 1;
-  bottom: 0px;
-  left: 0;
-  height: 40px;
-  width: 100%;
-  background-color: #203b47;
-}
-
-#footer-txt {
-  position: absolute;
-  bottom: 5px;
-  font-size: 80%;
-  color: #EEEEEE;
-  white-space: pre;
+#page-title {letter-spacing:-0.15em;}
+#content-a {
+  padding-left:2em;
+  padding-right:2em;
 }
 
 /*
-#float-bg {
-  position: fixed;
-  z-index: 3;
-  top: 20%;
-  left: 80%;
-  height: 7em;
-  width: 8.5em;
-  background-color: #333333;
-  opacity: 0.5;
-  border: 1px solid #EEEEEE;
-}
-
-#float-bg:hover {
-  opacity: 1;
-}
-
-#float-txt {
-  position: fixed;
-  padding-top: 0.5em;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-bottom: 0.5em;
-  font-size: 80%;
-  color: #EEEEEE;
-  white-space: pre;
-  opacity: 0.5;
-}
-
-#float-txt:hover {
-  opacity: 1;
-}
+	Clickables
 */
-
-/*
-	Utilities
-*/
+#SMButton {
+  font-size:150%;
+  white-space:pre;
+}
 a.SMButton {
   display: inline-block;
   font-size: 1em;
@@ -203,29 +147,40 @@ a.SMButton {
   text-decoration: none;
   font-weight: 300;
 }
-
 a.SMButton:hover, a.SMButton:focus, a.SMButton:active {
   color: #000000;
   background-color: #EEEEEE;
   font-weight: 300;
 }
-
-a.SMButton>* {
-  margin-bottom: 0.35rem;
-}
-
+a.SMButton>* {margin-bottom: 0.35rem;}
 a.SMButton>div.small {
   font-size: 0.67em;
   line-height: 1em;
   font-weight: 300;
 }
-
 a.icon {
   opacity: 0.5;
   transition: all 0.4s;
   margin-right: 1em;
 }
+a.icon:hover {opacity: 1;}
 
-a.icon:hover {
-  opacity: 1;
+/*
+	Footer
+*/
+#footer-bg {
+  position: relative;
+  z-index: 1;
+  bottom: 0px;
+  left: 0;
+  height: 1em;
+  width: 100%;
+  background-color: #203b47;
+}
+#footer-txt {
+  position: absolute;
+  line-height: 1.3em;
+  font-size: 75%;
+  color: #EEEEEE;
+  white-space: pre;
 }
